@@ -1,38 +1,167 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff7ed;
+  color: #431407;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app {
   min-height: 100vh;
+}
+
+.header {
+  background: #9a3412;
+  color: white;
+  text-align: center;
+  padding: 35px 20px;
+}
+
+.header h1 {
+  margin: 0 0 8px;
+}
+
+.header p {
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+/* Balance */
+
+.balance-section {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px #fed7aa;
+}
+
+.balance {
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+.balance p {
+  margin-bottom: 5px;
+}
+
+.balance h2 {
+  font-size: 35px;
+  margin: 0;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.summary p {
+  margin-bottom: 5px;
+}
+
+.summary h3 {
+  margin: 0;
+}
+
+/* Form */
+
+.form-box {
+  background: white;
+  padding: 25px;
+  margin-top: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px #fed7aa;
+}
+
+.form-box h2 {
+  margin-top: 0;
+}
+
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 12px;
+}
+
+input,
+select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  font-size: 16px;
+}
+
+form button {
+  padding: 12px;
+  border: none;
+  border-radius: 7px;
+  background: #ea580c;
   color: white;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+/* Transactions */
+
+.transaction-list {
+  background: white;
+  padding: 25px;
+  margin-top: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px #fed7aa;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.transaction-item h3 {
+  margin: 0 0 5px;
+}
+
+.transaction-item p {
+  margin: 0;
+  color: #777;
+}
+
+.transaction-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.income {
+  color: #16a34a;
+}
+
+.expense {
+  color: #dc2626;
+}
+
+.delete-btn {
+  border: none;
+  padding: 7px 12px;
+  border-radius: 6px;
+  background: #dc2626;
+  color: white;
+  cursor: pointer;
+}
+
+.empty {
+  text-align: center;
+  color: #777;
 }
